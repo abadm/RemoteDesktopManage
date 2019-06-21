@@ -249,7 +249,7 @@ namespace MetroFramework.Controls
                      ControlStyles.ResizeRedraw |
                      ControlStyles.UserPaint, true);
 
-            TextAlign = ContentAlignment.BottomLeft;
+            TextAlign = ContentAlignment.MiddleCenter;
         }
 
         #endregion

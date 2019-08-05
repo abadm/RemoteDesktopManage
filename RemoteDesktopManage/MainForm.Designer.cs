@@ -50,6 +50,7 @@
             this.tmiGropEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tmiGroupDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmiFullScreenHost = new System.Windows.Forms.ToolStripMenuItem();
             this.tabMain.SuspendLayout();
             this.pageMain.SuspendLayout();
             this.pnlSetting.SuspendLayout();
@@ -171,6 +172,7 @@
             this.btnChangeStyle.Size = new System.Drawing.Size(85, 37);
             this.btnChangeStyle.TabIndex = 2;
             this.btnChangeStyle.Text = "切换主题";
+            this.btnChangeStyle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnChangeStyle.UseSelectable = true;
             this.btnChangeStyle.UseVisualStyleBackColor = true;
             this.btnChangeStyle.Click += new System.EventHandler(this.btnChangeStyle_Click);
@@ -217,15 +219,16 @@
             // menuTabPage
             // 
             this.menuTabPage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tmiCloseHost});
+            this.tmiCloseHost,
+            this.tmiFullScreenHost});
             this.menuTabPage.Name = "menu";
             this.menuTabPage.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuTabPage.Size = new System.Drawing.Size(101, 26);
+            this.menuTabPage.Size = new System.Drawing.Size(181, 70);
             // 
             // tmiCloseHost
             // 
             this.tmiCloseHost.Name = "tmiCloseHost";
-            this.tmiCloseHost.Size = new System.Drawing.Size(100, 22);
+            this.tmiCloseHost.Size = new System.Drawing.Size(180, 22);
             this.tmiCloseHost.Text = "关闭";
             this.tmiCloseHost.Click += new System.EventHandler(this.tmiCloseHost_Click);
             // 
@@ -263,6 +266,13 @@
             this.tmiGroupDelete.Size = new System.Drawing.Size(264, 22);
             this.tmiGroupDelete.Text = "确认无误，删除父节点(含子节点)！";
             this.tmiGroupDelete.Click += new System.EventHandler(this.tmiGroupDelete_Click);
+            // 
+            // tmiFullScreenHost
+            // 
+            this.tmiFullScreenHost.Name = "tmiFullScreenHost";
+            this.tmiFullScreenHost.Size = new System.Drawing.Size(180, 22);
+            this.tmiFullScreenHost.Text = "全屏";
+            this.tmiFullScreenHost.Click += new System.EventHandler(this.tmiFullScreenHost_Click);
             // 
             // MainForm
             // 
@@ -314,5 +324,6 @@
         private System.Windows.Forms.ToolStripMenuItem tmiGropEdit;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tmiGroupDelete;
+        private System.Windows.Forms.ToolStripMenuItem tmiFullScreenHost;
     }
 }

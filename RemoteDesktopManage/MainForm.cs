@@ -182,7 +182,7 @@ namespace RdpTest
             #endregion
 
             #endregion
-
+            
             //连接远程桌面
             rdpClient.Connect();
         }
@@ -347,6 +347,11 @@ namespace RdpTest
             CloseHost(tabMain.SelectedIndex);
         }
 
+        private void tmiFullScreenHost_Click(object sender, EventArgs e)
+        {
+            FullScreenHost(tabMain.SelectedIndex);
+        }
+
         private void CloseHost(int pageIndex)
         {
             var page = tabMain.TabPages[pageIndex];
@@ -358,6 +363,13 @@ namespace RdpTest
             tabMain.TabPages.Remove(page);
 
             tabMain.SelectedIndex = pageIndex - (pageIndex == tabMain.TabPages.Count ? 1 : 0);
+        }
+
+        private void FullScreenHost(int pageIndex)
+        {
+            var page = tabMain.TabPages[pageIndex];
+            var rdpClient = (AxMsRdpClient9NotSafeForScripting)page.Controls[0];
+            rdpClient.FullScreen = true;            
         }
         #endregion
 
@@ -470,6 +482,7 @@ namespace RdpTest
 
         #endregion
 
+        
     }
 }
 

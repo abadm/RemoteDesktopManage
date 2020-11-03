@@ -10,6 +10,7 @@
 
 ![效果-打开远程连接](Images/效果-打开远程连接.png)
 
+[TOC]
 
 ## 1、什么是 MSTSC (Microsoft terminal services client) ？
 创建与终端服务器或其他远程计算机的连接，适用于 Windows XP 及以上的 Windows 操作系统
